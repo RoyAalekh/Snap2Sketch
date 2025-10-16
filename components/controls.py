@@ -10,11 +10,14 @@ class ControlPanel:
         """
         Render the control panel for user inputs.
         """
+        st.markdown("### Upload Your Image")
+        st.write("Select an image file to transform into a pencil sketch")
+        
         with st.container():
             uploaded_file = st.file_uploader(
-                "Upload Image",
+                "Choose an image file",
                 type=["jpg", "jpeg", "png"],
-                label_visibility="collapsed",
+                help="Upload a JPG, JPEG, or PNG image file to convert to pencil sketch",
             )
 
         if uploaded_file:
