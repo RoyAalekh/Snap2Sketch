@@ -21,11 +21,14 @@ def render_help():
     if st.session_state.show_how_to_run:
         st.info(
             """
-        **Quick Guide:**
-        1. Upload image
-        2. Pick quality
-        3. Generate sketch
-        4. Adjust darkness
-        5. Download result
+        **How to Use Snap2Sketch:**
+        
+        1. **Upload Image** - Select a JPG, JPEG, or PNG file from your device
+        2. **Choose Quality** - Pick Low, Medium, or High quality for processing
+        3. **Generate Sketch** - Click the button to create your pencil sketch
+        4. **Adjust Darkness** - Use the slider to fine-tune the sketch intensity
+        5. **Download Result** - Save your finished sketch as a PNG file
+        
+        **Tips:** Higher quality settings provide more detail but take longer to process.
         """
         )
