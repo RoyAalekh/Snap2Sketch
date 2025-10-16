@@ -60,9 +60,9 @@ class DisplayPanel:
             # Play/Pause Controls
             col1, col2 = st.columns(2)
             with col1:
-                play_animation = st.button("▶️ Play Animation")
+                play_animation = st.button("Play Animation")
             with col2:
-                stop_animation = st.button("⏸️ Stop Animation")
+                stop_animation = st.button("Stop Animation")
 
             if play_animation:
                 st.session_state.animation_running = True
@@ -94,7 +94,7 @@ class DisplayPanel:
         st.markdown(
             """
                 <div class="uploadbox">
-                    <h3>📸 Upload an Image</h3>
+                    <h3>Upload an Image</h3>
                     <p>Supported formats: JPG, PNG</p>
                 </div>
                 """,
