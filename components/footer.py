@@ -9,7 +9,7 @@ def render_footer():
     st.markdown(
         """
         <div style="text-align: center; color: #666; padding: 20px;">
-            Made with ❤️ by AR • <a href="https://github.com/RoyAalekh" style="color: #1E88E5; text-decoration: none;">GitHub</a>
+            Developed by AR • <a href="https://github.com/RoyAalekh" style="color: #1E88E5; text-decoration: none;">GitHub</a>
         </div>
         """,
         unsafe_allow_html=True,
