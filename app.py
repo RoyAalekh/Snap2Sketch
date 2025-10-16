@@ -27,7 +27,7 @@ class Snap2SketchApp:
         """
         st.set_page_config(
             page_title="Snap2Sketch",
-            page_icon="✏️",
+            page_icon="🎨",
             layout="wide",
             initial_sidebar_state="collapsed",
         )
