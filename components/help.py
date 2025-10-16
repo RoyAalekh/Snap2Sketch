@@ -15,17 +15,17 @@ def render_help():
     """
     col1, col2, col3 = st.columns([6, 1, 1])
     with col3:
-        if st.button("❓ Help"):
+        if st.button("Help"):
             st.session_state.show_how_to_run = not st.session_state.show_how_to_run
 
     if st.session_state.show_how_to_run:
         st.info(
             """
-        🎨 **Quick Guide:**
-        1. 📤 Upload image
-        2. 🔍 Pick quality
-        3. ✨ Generate
-        4. 🎚️ Adjust
-        5. 💾 Download
+        **Quick Guide:**
+        1. Upload image
+        2. Pick quality
+        3. Generate sketch
+        4. Adjust darkness
+        5. Download result
         """
         )
