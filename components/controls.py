@@ -46,7 +46,7 @@ class ControlPanel:
         st.markdown("#### Step 2: Generate Your Sketch")
         st.write("Click the button below to transform your image into a pencil sketch.")
         generate_button = st.button(
-            "✨ Generate Sketch",
+            "Generate Sketch",
             use_container_width=True,
             help="Click to generate the pencil sketch based on your quality selection.",
         )
@@ -98,7 +98,7 @@ class ControlPanel:
                 st.session_state.adjusted_sketch
             )
             st.download_button(
-                "Download Sketch 💾",
+                "Download Sketch",
                 data=buffer,
                 file_name="sketch.png",
                 mime="image/png",
