@@ -14,7 +14,7 @@ class DisplayPanel:
         if uploaded_file:
             self.render_tabs_with_content(uploaded_file)
         else:
-            self.render_upload_placeholder()
+            self.render_welcome_message()
 
     def render_tabs_with_content(self, uploaded_file):
         """
@@ -87,16 +87,17 @@ class DisplayPanel:
             st.warning("No animation steps available. Please generate a sketch.")
 
     @staticmethod
-    def render_upload_placeholder():
+    def render_welcome_message():
         """
-        Render the upload placeholder.
+        Render a welcome message when no image is uploaded.
         """
         st.markdown(
             """
-                <div class="uploadbox">
-                    <h3>Upload an Image</h3>
-                    <p>Supported formats: JPG, PNG</p>
-                </div>
-                """,
+            <div style="text-align: center; padding: 50px; color: #666;">
+                <h2>Welcome to Snap2Sketch</h2>
+                <p>Upload an image using the control panel on the right to get started.</p>
+                <p>Your transformed sketch will appear here once processing is complete.</p>
+            </div>
+            """,
             unsafe_allow_html=True,
         )
